@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent :first-child {
+        color: red;
+      }
+
+      .parent :first-of-type {
+        background: yellow;
+      }
+
+      .parent :nth-child(4) {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Child</h1>
+      <div>Child</div>
+      <div>Child</div>
+      <div>Child</div>
+      <span>child5</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!-- descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) -->
+
+
+<!-- combinator-সংযোজক -->
+<!-- descendant - বংশধর, সন্তানসন্ততি -->
+<!-- Adjacent - পার্শ্ববর্তী, সন্নিহিত, সংলগ্ন -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator</title>
+    <style>
+      .div1 > p {
+        background-color: red;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <div>
+        <p>in inside div p1</p>
+      </div>
+      <p>Third paragraph</p>
+      <p>Fourth paragraph</p>
+    </div>
+    <hr />
+    <div class="div1">
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <div>
+        <p>in inside div p1</p>
+      </div>
+      <p>Third paragraph</p>
+      <p>Fourth paragraph</p>
+    </div>
+  </body>
+</html>
